@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proteção de Dados e Serviços</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Proteção de Dados e Serviços</h1>
+
+  <div class="menu">
+    <!-- Botões já existentes -->
+    <button onclick="openPopup('redesim')">REDESIM</button>
+    <button onclick="openPopup('receita')">Receita Federal</button>
+    <button onclick="openPopup('anpd')">ANPD</button>
+    <button onclick="openPopup('delegacia')">Delegacia Virtual</button>
+    <button onclick="openPopup('serasa')">Serasa</button>
+    <button onclick="openPopup('spc')">SPC Brasil</button>
+    <button onclick="openPopup('boavista')">Boa Vista Serviços</button>
+    <button onclick="openPopup('detran')">Detran RJ</button>
+    <button onclick="openPopup('cnh')">CNH Digital</button>
+    <button onclick="openPopup('sus')">Carteira do SUS</button>
+    <button onclick="openPopup('irpf')">Imposto de Renda</button>
+    <button onclick="openPopup('dpvat')">DPVAT / Seguros Veículos</button>
+    <button onclick="openPopup('ctps')">Carteira de Trabalho Digital</button>
+    <button onclick="openPopup('inss')">INSS</button>
+    <button onclick="openPopup('titulo')">Título de Eleitor</button>
+    <button onclick="openPopup('certidao')">Certidões Nascimento / Casamento / Óbito</button>
+    <button onclick="openPopup('reservista')">Certificado de Reservista</button>
+    <button onclick="openPopup('nadaConsta')">Nada Consta Justiça RJ</button>
+
+    <button onclick="openPopup('govbr')">Login Acesso GOV.BR</button>
+    <button onclick="openPopup('assinador')">Assinador Digital ITI</button>
+    <button onclick="openPopup('serial')">Consulta Serial Aparelho</button>
+    <button onclick="openPopup('certidoesGov')">Certidões GOV.BR</button>
+    <button onclick="openPopup('cpfConsulta')">Consulta CPF Nacional</button>
+    <button onclick="openPopup('servicoEstadual')">Serviço Estadual RJ</button>
+    <button onclick="openPopup('categoriasGov1')">Categorias GOV.BR</button>
+    <button onclick="openPopup('categoriasGov2')">Mais Categorias GOV.BR</button>
+    <button onclick="openPopup('reclameaqui')">Reclame Aqui</button>
+  </div>
+
+  <div class="popup-overlay" id="popupOverlay">
+    <div class="popup" id="popupContent">
+      <h2 id="popupTitle">Título</h2>
+      <p id="popupDesc">Descrição do serviço...</p>
+      <button class="btn-go" id="popupLink" onclick="">IR</button>
+      <button class="btn-close" onclick="closePopup()">Fechar</button>
+    </div>
+  </div>
+
+  <footer>Serviços Essenciais</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
